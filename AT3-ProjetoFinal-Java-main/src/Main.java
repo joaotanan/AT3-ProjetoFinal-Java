@@ -31,6 +31,7 @@ public class Main {
 
                     System.out.print("Idade: ");
                     int idade = sc.nextInt();
+                    sc.nextInt();
 
                     Pessoa p = (tipo == 1) ? new Aluno(nome, idade) : new Professor(nome, idade);
                     dao.cadastrar(p);
